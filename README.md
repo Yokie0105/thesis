@@ -10,7 +10,7 @@ This repository contains the R source code for the master's thesis: *Comparison 
 **Mentor:** A. Huybrechts (Ghent University, Johnson & Johnson)  
 **Academic year:** 2025-2026
 
-## Repository structure
+## Structure
 
 **Analysis code:**
 * `01_preprocessing.R`: preprocessing of raw cell composition data into original RA data
