@@ -14,7 +14,7 @@ set.seed(123)
 iters <- 250
 sparsity.levels <- c(0.00, 0.10, 0.20, 0.30, 0.40, 0.50, 0.60, 0.70, 0.80, 0.90, 1.00)
 
-# Toggle whether data simulation needs to be run again
+# Toggle TRUE/FALSE whether data simulation needs to be run again
 run.simulation.sparsity <- TRUE
 
 if (run.simulation.sparsity) {
