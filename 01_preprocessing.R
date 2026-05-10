@@ -6,9 +6,9 @@ library(tidyr)
 # PREPROCESSING
 
 # Load raw RA data
-frequencies.long <- read.csv("altra_AIFI_L2_frequencies.csv")
-metadata <- read.csv("aifi_altra_sound-life_clinical_lab_results.csv")
-h5ad <- read.csv("extracted_h5ad_metadata.csv")
+frequencies.long <- read.csv("data/altra_AIFI_L2_frequencies.csv")
+metadata <- read.csv("data/aifi_altra_sound-life_clinical_lab_results.csv")
+h5ad <- read.csv("data/extracted_h5ad_metadata.csv")
 race.ethnicity <- read.csv("2026-02-28_ALTRA_BRI_Race_Ethnicity.csv")
 
 # Filter for first visit per subject
