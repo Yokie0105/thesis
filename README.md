@@ -25,7 +25,7 @@ This repository contains the R source code for the master's thesis: *Comparison 
 * `parametric_simulation_function.R`: performance evaluation functions to investigate methods for bias correction in cell composition analysis
 
 ## Data availability
-Cell composition data were taken from a prospective longitudinal study on Rheumatoid Arthritis (RA) [1], and are publicly available through the [Allen Institute of Immunology](https://apps.allenimmunology.org/aifi/insights/ra-progression/downloads/scrna/). You can find them in the `data` folder.
+Cell composition data were taken from a prospective longitudinal study on Rheumatoid Arthritis (RA) [1], and are publicly available through the [Allen Institute of Immunology](https://apps.allenimmunology.org/aifi/insights/ra-progression/downloads/scrna/). You can find these data in the `data` folder.
 
 ## Prerequisites
 To run this code, you need to have **R** installed, alongside several required packages. Most important is the installation of the `voomCLR` package [2], which is currently available through [GitHub](https://github.com/johnsonandjohnson/voomCLR):
