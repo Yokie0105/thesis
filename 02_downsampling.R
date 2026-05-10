@@ -5,8 +5,6 @@ library(cobalt)
 library(compositions)
 library(factoextra)
 
-setwd("C:/Users/sarah/OneDrive - KU Leuven/Desktop/Master's Thesis")
-
 # Load data
 data <- readRDS("original_RA_data.rds")
 data <- na.omit(data)

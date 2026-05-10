@@ -4,8 +4,6 @@ library(ggplot2)
 library(robustbase)
 library(microbiome)
 
-setwd("C:/Users/sarah/OneDrive - KU Leuven/Desktop/Master's Thesis")
-
 # Load original data
 ori.data <- readRDS("original_RA_data.rds")
 ori.data <- na.omit(ori.data)

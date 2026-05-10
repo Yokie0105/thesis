@@ -3,7 +3,6 @@ library(tidyr)
 library(ggplot2)
 library(iCOBRA)
 
-setwd("C:/Users/sarah/OneDrive - KU Leuven/Desktop/Master's Thesis")
 source("parametric_simulation_function.R")
 source("performance_evaluation_functions.R")
 

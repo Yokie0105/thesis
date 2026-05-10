@@ -1,8 +1,6 @@
 library(dplyr)
 library(tidyr)
 
-setwd("C:/Users/sarah/OneDrive - KU Leuven/Desktop/Master's Thesis")
-
 ################################################################################
 
 # PREPROCESSING

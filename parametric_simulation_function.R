@@ -2,8 +2,6 @@ library(dplyr)
 library(MCMCpack)
 library(ggplot2)
 
-setwd("C:/Users/sarah/OneDrive - KU Leuven/Desktop/Master's Thesis")
-
 ################################################################################
 
 # PARAMETRIC SIMULATION FUNCTION

@@ -2,8 +2,6 @@ library(voomCLR)
 library(limma)  
 library(modeest)
 
-setwd("C:/Users/sarah/OneDrive - KU Leuven/Desktop/Master's Thesis")
-
 ################################################################################
 
 # VOOMCLR FUNCTION
