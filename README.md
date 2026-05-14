@@ -18,7 +18,7 @@ This repository contains the R source code for the master's thesis: *Comparison 
 * `03_EDA.R`: exploratory data analysis on original and imbalanced RA data
 * `04_case_study.R`: cell composition analysis on original and imbalanced RA data
 * `05_simulation_study.R`: simulation study on simulated RA data
-* `06_sensitivity_analysis.R`: sensitivity analysis on simulated RA data
+* `06_robustness_test.R`: robustness test against violation of sparsity assumption on simulated RA data
 
 **Helper functions:**
 * `parametric_simulation_function.R`: parametric simulation function to simulate cell counts

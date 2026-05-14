@@ -53,7 +53,7 @@ if (run.simulation.sparsity) {
 
 ################################################################################
 
-# SENSITIVITY ANALYSIS
+# ROBUSTNESS TEST
 
 ## Metrics
 
