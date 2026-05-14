@@ -44,7 +44,7 @@ df.mean.RA <- data.frame(Celltype=names(colMeans(ori.data.RA[, celltypes])), mea
 
 # Model analysis
 # Adjustment: Race + Ethnicity
-design.adj <- model.matrix(~ Exposure + Race + Ethnicity, data=ori.data)
+design.adj <- model.matrix(~ Exposure + Sex + Age + Race + Ethnicity, data=ori.data)
 
 v.adj <- voomCLR(counts=Y, design=design.adj, varCalc="analytical", varDistribution="NB", plot=FALSE, span=0.8)
 fit.adj <- lmFit(v.adj, design.adj)
@@ -83,8 +83,9 @@ ggplot(results.adj.mode, aes(x=logFC, y=Celltype)) +
   geom_vline(xintercept=0, linetype="dashed") +
   geom_segment(aes(x=0, xend=logFC, y=Celltype, yend=Celltype, color=Category)) +
   geom_point(aes(color=Category, size=mean.RA)) +
-  geom_text(aes(label=Asterix, hjust=ifelse(logFC >= 0, -1.0, 1.5)), vjust=0.75, size=5, show.legend=FALSE) +
+  geom_text(aes(label=Asterix, hjust=ifelse(logFC >= 0, -1.0, 1.5)), vjust=0.75, size=7, show.legend=FALSE) +
   guides(size="none", color=guide_legend(nrow=1)) +
+  scale_x_continuous(limits=c(-0.75, 0.75), breaks=seq(-0.75, 0.75, by=0.25)) +
   labs(x="LogFC", y="Cell type") +
   theme_bw(base_size=16) +
   theme(legend.position="bottom")
@@ -141,8 +142,9 @@ ggplot(results.adj.vote, aes(x=logFC, y=Celltype)) +
   geom_vline(xintercept=0, linetype="dashed") +
   geom_segment(aes(x=0, xend=logFC, y=Celltype, yend=Celltype, color=Category)) +
   geom_point(aes(color=Category, size=mean.RA)) +
-  geom_text(aes(label=Asterix, hjust=ifelse(logFC >= 0, -1.0, 1.5)), vjust=0.75, size=5, show.legend=FALSE) +
+  geom_text(aes(label=Asterix, hjust=ifelse(logFC >= 0, -1.0, 1.5)), vjust=0.75, size=7, show.legend=FALSE) +
   guides(size="none", color=guide_legend(nrow=1)) +
+  scale_x_continuous(limits=c(-0.75, 0.75), breaks=seq(-0.75, 0.75, by=0.25)) +
   labs(x="LogFC", y="Cell type") +
   theme_bw(base_size=16) +
   theme(legend.position="bottom")
@@ -204,8 +206,9 @@ ggplot(results.adj.mode, aes(x=logFC, y=Celltype)) +
   geom_vline(xintercept=0, linetype="dashed") +
   geom_segment(aes(x=0, xend=logFC, y=Celltype, yend=Celltype, color=Category)) +
   geom_point(aes(color=Category, size=mean.RA)) +
-  geom_text(aes(label=Asterix, hjust=ifelse(logFC >= 0, -1.0, 1.5)), vjust=0.75, size=5, show.legend=FALSE) +
+  geom_text(aes(label=Asterix, hjust=ifelse(logFC >= 0, -1.0, 1.5)), vjust=0.75, size=7, show.legend=FALSE) +
   guides(size="none", color=guide_legend(nrow=1)) +
+  scale_x_continuous(limits=c(-0.75, 0.75), breaks=seq(-0.75, 0.75, by=0.25)) +
   labs(x="LogFC", y="Cell type") +
   theme_bw(base_size=16) +
   theme(legend.position="bottom")
@@ -262,8 +265,9 @@ ggplot(results.adj.vote, aes(x=logFC, y=Celltype)) +
   geom_vline(xintercept=0, linetype="dashed") +
   geom_segment(aes(x=0, xend=logFC, y=Celltype, yend=Celltype, color=Category)) +
   geom_point(aes(color=Category, size=mean.RA)) +
-  geom_text(aes(label=Asterix, hjust=ifelse(logFC >= 0, -1.0, 1.5)), vjust=0.75, size=5, show.legend=FALSE) +
+  geom_text(aes(label=Asterix, hjust=ifelse(logFC >= 0, -1.0, 1.5)), vjust=0.75, size=7, show.legend=FALSE) +
   guides(size="none", color=guide_legend(nrow=1)) +
+  scale_x_continuous(limits=c(-0.75, 0.75), breaks=seq(-0.75, 0.75, by=0.25)) +
   labs(x="LogFC", y="Cell type") +
   theme_bw(base_size=16) +
   theme(legend.position="bottom")
