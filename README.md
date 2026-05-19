@@ -21,8 +21,8 @@ This repository contains the R source code for the master's thesis: *Comparison 
 * `06_robustness_test.R`: robustness test against violation of sparsity assumption on simulated RA data
 
 **Helper functions:**
-* `parametric_simulation_function.R`: parametric simulation function to simulate cell counts
-* `parametric_simulation_function.R`: performance evaluation functions to investigate methods for bias correction in cell composition analysis
+* `parametric_simulation_function.R`: parametric simulation function to simulate cell type counts
+* `performance_evaluation_functions.R`: performance evaluation functions to investigate methods for bias correction in cell composition analysis
 
 ## Data availability
 Cell composition data were taken from a prospective longitudinal study on Rheumatoid Arthritis (RA) [1], and are publicly available through the [Allen Institute of Immunology](https://apps.allenimmunology.org/aifi/insights/ra-progression/downloads/scrna/). You can find these data in the `data` folder.
