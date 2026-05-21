@@ -2,7 +2,7 @@
 
 ## *Comparison of statistical methods that account for unmeasured confounding in cell composition data*
 
-This repository contains the R source code for the master's thesis: *Comparison of statistical methods that account for unmeasured confounding in cell composition data*. This thesis was written in fulfillment of the requirements for the degree of Master of Science in Statistics and Data Science at **KU Leuven**, in collaboration with **Johnson & Johnson**.
+This repository contains the R source code for the master's thesis: *The impact of unmeasured confounding on statistical methods for cell composition analysis*. This thesis was written in fulfillment of the requirements for the degree of Master of Science in Statistics and Data Science at **KU Leuven**, in collaboration with **Johnson & Johnson**.
 
 **Author:** Sarah Brosens  
 **Supervisor:** Prof. A. A. Abad (KU Leuven)  
