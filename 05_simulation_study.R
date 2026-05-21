@@ -366,13 +366,13 @@ ggplot(covariate.examples, aes(x=Age)) +
   geom_vline(data=mean.Age.by.Exposure, aes(xintercept=mean.Age, color=Group)) +
   scale_color_manual(values=c("ACPA+"="#00BFC4", "ACPA-"="#F8766D")) +
   labs(x="Age (years)", y="Density") +
-  theme_bw(base_size=20)
+  theme_bw(base_size=24)
 
 # Ethnicity plot
 ggplot(covariate.examples, aes(x=Group, fill=Ethnicity)) +
   geom_bar(position="fill") +
   facet_wrap(~Confounding) +
   labs(x="Exposure group", y="Proportion") +
-  theme_bw(base_size=20)
+  theme_bw(base_size=24)
 
 cat("Visualization complete!...\n")
