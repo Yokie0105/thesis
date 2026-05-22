@@ -168,12 +168,14 @@ ggplot(div.df, aes(x=Age, y=Shannon, color=Exposure, fill=Exposure)) +
   geom_point() + 
   geom_smooth(method="loess", se=TRUE) + 
   labs(x="Age (year)", y="Shannon", color="Exposure") +
+  coord_cartesian(ylim=c(1.8, 2.6)) +  
   theme_bw(base_size=16)
 
 ggplot(div.df, aes(x=BMI, y=Shannon, color=Exposure, fill=Exposure)) + 
   geom_point() + 
   geom_smooth(method="loess", se=TRUE) + 
   labs(x="BMI (kg/m²)", y="Shannon", color="Exposure") +
+  coord_cartesian(ylim=c(1.8, 2.6)) +  
   theme_bw(base_size=16)
 
 ################################################################################
@@ -313,6 +315,7 @@ ggplot(div.df, aes(x=Age, y=Shannon, color=Exposure, fill=Exposure)) +
   geom_point() + 
   geom_smooth(method="loess", se=TRUE) + 
   labs(x="Age (year)", y="Shannon", color="Exposure") +
+  coord_cartesian(ylim=c(1.8, 2.6)) +  
   theme_bw(base_size=16)
 
 
@@ -320,4 +323,5 @@ ggplot(div.df, aes(x=BMI, y=Shannon, color=Exposure, fill=Exposure)) +
   geom_point() + 
   geom_smooth(method="loess", se=TRUE) + 
   labs(x="BMI (kg/m²)", y="Shannon", color="Exposure") +
+  coord_cartesian(ylim=c(1.8, 2.6)) +  
   theme_bw(base_size=16)
